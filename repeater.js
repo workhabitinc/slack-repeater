@@ -9,8 +9,8 @@
 // Setup for our server
 var fs = require('fs');
 var https = require('https');
-var privateKey  = fs.readFileSync('key.pem', 'utf8');
-var certificate = fs.readFileSync('cert.pem', 'utf8');
+var privateKey  = fs.readFileSync(__dirname + '/key.pem', 'utf8');
+var certificate = fs.readFileSync(__dirname + '/cert.pem', 'utf8');
 var bodyParser = require('body-parser');
 var credentials = {key: privateKey, cert: certificate};
 var express = require('express');

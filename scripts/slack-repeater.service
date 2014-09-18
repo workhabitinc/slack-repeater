@@ -4,8 +4,8 @@ Restart=always
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=repeater.js
-User=woot
-Group=woot
+User=build
+Group=build
 
 [Install]
 WantedBy=multi-user.target
