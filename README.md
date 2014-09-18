@@ -33,7 +33,7 @@ var url = 'https://wh.slack.com/services/hooks/incoming-webhook?token=IJF2i0fm2o
 
 The URL and token will be given to you during Slack API setup.
 
-Install the systemd startup script, located at scripts/slack-repeater.service.  This should be located under /etc/systemd/system.  Note that you should change the parameters within the script accordingly to take into account the user the repeater is being installed under.
+Install the systemd startup script, located at scripts/slack-repeater.service.  This should be located under /etc/systemd/system/multi-user.target.wants.  Note that you should change the parameters within the script accordingly to take into account the user the repeater is being installed under.
 
 Finally, start it up.
 
