@@ -35,7 +35,7 @@ The URL and token will be given to you during Slack API setup.
 
 Install the systemd startup script, located at scripts/slack-repeater.service.  This should be located under /etc/systemd/system/multi-user.target.wants.  Note that you should change the parameters within the script accordingly to take into account the user the repeater is being installed under.
 
-Finally, start it up.
+Finally, start it up.  As root:
 
 ```
 systemctl enable slack-repeater
