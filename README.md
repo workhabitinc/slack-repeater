@@ -44,7 +44,7 @@ systemctl start slack-repeater
 
 ### Testing and Use
 
-You can use the repeater by posting a payload including a channel, username, text, and icon_emoji.  icon_emoji is optional, but the other fields are required.  Example:
+You can use the repeater by posting a payload including a channel, username, text, icon_emoji and attachments array.  icon_emoji and attachments are optional, but the other fields are required.  Example:
 
 ```
 curl -kX POST -H "Content-Type: application/json" -d '{"channel": "#general", "username": "j.js", "text": "What?  j.pl is evolving.  j.pl has evolved into j.js.", "icon_emoji": ":coffee:"}' https://127.0.0.1:8000
