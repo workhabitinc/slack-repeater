@@ -31,6 +31,7 @@ app.get('/', function(req, res){
 // Handle POST to /
 app.post('/', function(req, res){
 	var emoji = req.body.icon_emoji;
+	var attach = req.body.attachments;
 	if(!req.body.channel) {
 		res.status(400).send("Message rejected - missing 'channel' parameter.");
 	} else if (!req.body.username) {
@@ -45,7 +46,8 @@ app.post('/', function(req, res){
 			channel: req.body.channel,
 			username: req.body.username,
 			text: req.body.text,
-			icon_emoji: emoji
+			icon_emoji: emoji,
+			attachments: attach
 		}
 		request.post(url, {
 			form: {
