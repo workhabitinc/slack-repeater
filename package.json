@@ -1,0 +1,10 @@
+{
+	"name":	"slack-repeater",
+	"version": "1.0.0",
+	"description": "Microservice for forwarding messages to Slack API",
+	"dependencies": {
+		"express": "~4.13.4",
+		"body-parser": "~1.15.0",
+		"request": "~2.70.0"
+	}
+}

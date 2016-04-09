@@ -1,0 +1,8 @@
+2016-04-09  Gary Gogick  <gary@workhabit.com>
+* Tested with updated dependencies
+* Slight improvements to error handling
+* Added license for open sourcing purposes
+* Updated README.md
+
+2014-09-18  Gary Gogick  <gary@workhabit.com>
+* Initial commit/release
